@@ -1,0 +1,79 @@
+.hero-slide {
+    position: relative;
+    height: 600px;
+    background: #f6eedb;
+    overflow: hidden; /* 중요: 잘리게 */
+}
+
+/* 공통 대형 타이틀 */
+.bg-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 140px;
+    font-weight: 800;
+    letter-spacing: -4px;
+    color: #000;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+/* CROISSANT */
+.bg-title.left {
+    top: 350px;
+    left: 450px;
+}
+
+/* SSANG (의도적으로 화면 밖) */
+.bg-title.right {
+    right: 400px; /* 이 값으로 잘리는 정도 조절 */
+    top: 200px;
+}
+
+/* 이하 동일 */
+.product-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.product-image img {
+    width: 480px;
+}
+
+.text-left {
+    position: absolute;
+    left: 600px;
+    top: 180px;
+    z-index: 2;
+}
+
+.text-right {
+    position: absolute;
+    right: 300px;
+    top: 350px;
+    z-index: 2;
+    /* background: #000; */
+}
+.text-right p:nth-child(1) {
+    right: 0;
+    /* background: #000; */
+}
+.text-right p:nth-child(2) {
+    text-align: right;
+    margin-bottom: 30px;
+    /* background: #000; */
+}
+.text-right .visual-box {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    width: 194px;
+    height: 30px;
+    position: relative;
+    padding: 10px 10px;
+    margin-left: 170px;
+    cursor: pointer;
+}

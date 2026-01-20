@@ -1,0 +1,124 @@
+.form {
+    width: 100%;
+    background: #1b4a31;
+    height: 80px;
+    position: relative;
+}
+.form .search-box {
+    margin-right: 100px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 20px;
+}
+.category {
+}
+.label {
+    color: #f7f0da;
+    margin-right: 8px;
+}
+
+.search-box select,
+.search-box input {
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #f7f0da;
+    border-radius: 2px;
+    font-size: 20px;
+    background: #1b4a31;
+    color: #f7f0da;
+}
+.search-box select {
+    width: 140px;
+}
+
+.search-box button {
+    height: 36px;
+    width: 90px;
+    border-radius: 2px;
+    background: #f7f0da;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 14px;
+    cursor: pointer;
+}
+.search-box button:hover {
+    background: #efede2;
+}
+
+// 컨텐츠
+.search-con {
+    width: 100%;
+    margin-top: 80px;
+}
+.search-con .inner {
+}
+.search-con h2 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.search-con .map-con {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+    justify-content: center;
+}
+.search-con .map-card {
+    height: 520px;
+    border: 1px solid #000;
+    padding: 30px;
+}
+.search-con .map-card img {
+    border: 1px solid #000;
+    width: 450px;
+    height: 350px;
+    margin-bottom: 15px;
+    padding: 50px 24px;
+}
+.search-con .map-card .btm-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    // background: #000;
+}
+
+.search-con .map-card .btm-box > p {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    // background: #000;
+}
+.search-con .map-card .btm-box > p:last-of-type {
+    color: #000;
+    margin-left: 170px;
+    font-weight: 400;
+}
+
+.search-con .map-card .btm-box::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.1);
+    // background: red;
+    width: 1px;
+    height: 16px;
+    position: absolute;
+    left: 155px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search-con .map-card .btn {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 14px 10px;
+    margin-left: 298px;
+    cursor: pointer;
+}

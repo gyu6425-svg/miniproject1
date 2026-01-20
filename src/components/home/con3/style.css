@@ -1,0 +1,35 @@
+.event {
+    width: 100%;
+    margin-top: 200px;
+}
+.event .inner {
+    margin: auto;
+    width: 1720px;
+    height: 340px;
+}
+
+.event .event-menu {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.event .event-menu .event-card {
+    border: 1px solid #000;
+    width: 412px;
+    height: 341px;
+}
+.event .event-menu .event-card img {
+    /* margin-left: 15px; */
+    padding: 16px;
+}
+
+.event .event-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-left: 170px;
+    cursor: pointer;
+    /* margin-bottom: 10px; */
+}

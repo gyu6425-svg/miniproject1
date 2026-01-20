@@ -1,0 +1,27 @@
+#header {
+    width: 100%;
+    background: #f7f0da;
+}
+#header .inner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#header h1 {
+}
+#header h1 img {
+}
+#header .nav .gnb {
+    display: flex;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 40%;
+    gap: 60px;
+}
+#header .nav p {
+    position: absolute;
+    right: 0;
+    top: 28px;
+}

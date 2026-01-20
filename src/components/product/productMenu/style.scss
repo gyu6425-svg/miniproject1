@@ -1,0 +1,24 @@
+.menu-bar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #1b4a31;
+
+    li {
+        padding: 8px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        user-select: none;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.on {
+            color: #db6c1b;
+        }
+    }
+    li a {
+        color: #f7f0da;
+    }
+}
