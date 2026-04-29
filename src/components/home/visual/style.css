@@ -40,7 +40,9 @@
 }
 
 .product-image img {
+    padding-top: 20px;
     width: 480px;
+    scale: 1.7;
 }
 
 .text-left {

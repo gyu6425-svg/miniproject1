@@ -25,3 +25,6 @@
     right: 0;
     top: 28px;
 }
+#header .nav a:hover {
+    color: #1B4A31;
+}

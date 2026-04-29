@@ -8,3 +8,125 @@
     position: relative;
     box-sizing: border-box;
 }
+
+#wrap :where(.btn, .img-btn, .event-btn, .visual-box) {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    transition: border-color 0.45s ease, color 0.45s ease;
+}
+
+#wrap :where(.btn, .img-btn, .event-btn, .visual-box)::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #1B4A31;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.45s ease;
+}
+
+#wrap :where(.btn, .img-btn, .event-btn, .visual-box) > * {
+    position: relative;
+    z-index: 1;
+    transition: color 0.45s ease, transform 0.45s ease;
+}
+
+#wrap :where(.btn, .img-btn, .event-btn, .visual-box):hover {
+    color: #fff;
+    border-color: #1B4A31;
+}
+
+#wrap :where(.btn, .img-btn, .event-btn, .visual-box):hover::before {
+    transform: scaleX(1);
+}
+
+#wrap :where(.btn, .img-btn, .event-btn, .visual-box):hover > * {
+    color: #fff;
+}
+
+#wrap :where(.btn, .img-btn, .event-btn, .visual-box):hover > *:last-child {
+    transform: translateX(4px);
+}
+
+.image-hover-info {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 78px 34px 34px;
+    background: rgba(0, 0, 0, 0.58);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    box-sizing: border-box;
+}
+
+:where(.season-thumb, .sign-thumb):hover .image-hover-info {
+    opacity: 1;
+}
+
+.image-hover-desc {
+    color: #fff;
+    text-align: center;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.image-hover-detail {
+    color: #fff;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+}
+
+.image-hover-detail strong {
+    display: block;
+    color: #fff;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 14px;
+}
+
+.image-hover-detail dl {
+    margin-bottom: 22px;
+}
+
+.image-hover-detail dl div {
+    display: flex;
+    gap: 26px;
+    margin-bottom: 10px;
+}
+
+.image-hover-detail dt {
+    width: 72px;
+    color: #fff;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.image-hover-detail dd,
+.image-hover-detail p {
+    color: #fff;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.image-hover-detail span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.85);
+    margin-bottom: 24px;
+}

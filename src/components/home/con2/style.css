@@ -27,9 +27,20 @@
     padding: 30px;
     /* background: #000; */
 }
-.signature .sign-con .img-con img {
+.signature .sign-con .img-con .sign-thumb {
+    position: relative;
+    width: 589px;
+    height: 589px;
     border: 1px solid #000;
     margin-bottom: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.signature .sign-con .img-con .sign-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .signature .sign-con .img-con .img-btn {
     display: flex;
@@ -87,7 +98,7 @@
 .signature .con2 .img-con img {
 }
 .signature .con2 .img-con .img-btn {
-    margin-left: 265px;
+    margin-left: 327px;
 }
 
 .signature .con3 {
@@ -98,6 +109,6 @@
 .signature .con3 .img-con img {
 }
 .signature .con3 .img-con .img-btn {
-    margin-left: 250px;
+    margin-left: 327px;
     cursor: pointer;
 }

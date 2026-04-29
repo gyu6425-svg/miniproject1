@@ -37,12 +37,93 @@
     padding: 30px;
 }
 
-.product .menu .menu-card img {
-    padding: 50px 24px;
-    width: 450px;
-    height: 350px;
+.product .menu .menu-card .product-thumb {
+    position: relative;
+    width: 500px;
+    height: 452px;
     border: 1px solid #000;
     margin-bottom: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.product .menu .menu-card .product-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 50px 24px;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+.product .menu .menu-card .product-info {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 78px 34px 34px;
+    background: rgba(0, 0, 0, 0.58);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    box-sizing: border-box;
+}
+.product .menu .menu-card .product-thumb:hover .product-info {
+    opacity: 1;
+}
+.product .menu .menu-card .product-desc {
+    color: #fff;
+    text-align: center;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.product .menu .menu-card .product-detail {
+    color: #fff;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+}
+.product .menu .menu-card .product-detail strong {
+    display: block;
+    color: #fff;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 14px;
+}
+.product .menu .menu-card .product-detail dl {
+    margin-bottom: 22px;
+}
+.product .menu .menu-card .product-detail dl div {
+    display: flex;
+    gap: 26px;
+    margin-bottom: 10px;
+}
+.product .menu .menu-card .product-detail dt {
+    width: 72px;
+    color: #fff;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.product .menu .menu-card .product-detail dd,
+.product .menu .menu-card .product-detail p {
+    color: #fff;
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.product .menu .menu-card .product-detail span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.85);
+    margin-bottom: 24px;
 }
 .product .menu .menu-card .btm-box {
     /* display: flex; */
