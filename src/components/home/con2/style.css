@@ -42,6 +42,38 @@
     height: 100%;
     object-fit: cover;
 }
+.signature .sign-con .img-con .image-hover-info {
+    align-items: center;
+    color: #fff;
+}
+.signature .sign-con .img-con .image-hover-desc {
+    color: #fff;
+    width: 100%;
+    margin: auto 0;
+    text-align: center;
+    font-size: 22px;
+}
+.signature .sign-con .img-con .image-hover-detail {
+    width: 100%;
+    color: #fff;
+    text-align: left;
+}
+.signature .sign-con .img-con .image-hover-detail strong {
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+}
+.signature .sign-con .img-con .image-hover-detail dt {
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+}
+.signature .sign-con .img-con .image-hover-detail dd,
+.signature .sign-con .img-con .image-hover-detail p {
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+}
 .signature .sign-con .img-con .img-btn {
     display: flex;
     justify-content: space-between;
